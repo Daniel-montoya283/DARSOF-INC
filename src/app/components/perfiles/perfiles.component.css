@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Permanent+Marker&display=swap');
+@font-face {
+    font-family: BlackFuture;
+    src: url(../../../assets/BlackFuture-gx1q3.otf);
+}
+.titulo{
+    color: bisque;
+    font-size: 30px;
+    font-family: BlackFuture;
+}
+ .titulo-A{
+    font-size: 85px;
+    letter-spacing: 5px;
+    color: #0DB8DE;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 25px;
+}
+.PF {
+    background: black;
+}
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+header {
+    background: black;
+    color: bisque;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+.container {
+    max-width: 1200px;
+    
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding-top: 25px;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:  bisque;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color: #0DB8DE;
+}
+
+#menu {
+    display: none;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/*Main*/
+.titulo-A{
+    padding-top: 150px;
+    text-align: center;
+}
+
+
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: bisque;
+}
+.containerr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-title {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+.content {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content image {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.content image img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.content .text-box {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1px;
+    transform: translate(-80px, 160px);
+}
+.content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.media {
+    margin-top: 5rem;
+}
+.W {
+    margin-right: 3rem;
+}.media p{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*Fin main*/
+
+
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    bottom: 0;
+    background: #141518;
+    color: bisque;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+} 
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+.redes {
+    display: grid;
+}
+.col a {
+    
+    font-size: 16px;
+    color: bisque;
+  
+}
+.col a:hover {
+    color: #0DB8DE;
+}
+.col h3 {
+    width: fit-content;
+    border-bottom: 1px solid #0DB8DE;
+    margin: 20px 0;
+}
+.link {
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.col ul li {
+    list-style: none;
+    color: bisque;
+}
+.col ul li a {
+    text-decoration: none;
+    color: bisque;
+}
+.col img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+/*botones*/
+
+/*Whattsapp*/
+.wht {
+    position: relative;
+    padding: 20px 45px;
+    text-decoration: none;
+    color: bisque;
+    letter-spacing: 10px;
+    margin-bottom: 25px ;
+}
+.btn-3 {
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+.btn-3::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    left: -10px;
+    top: 0;
+    background-color: bisque;
+    transform: skew(20deg, 0deg);
+    transition: all 0.4s ease;
+}
+.btn-3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    border: 3px solid #03cc57; 
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+.btn-3:hover::after {
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(280px);
+}
+.btn-3:hover::before {
+    background-color: #03cc57;
+    border: 3px solid #029740;
+    transform: skew(20deg, 0deg) scale(1.1); 
+}
+
+/*instagram*/
+.btn-2 {
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+.btn-2::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    left: -10px;
+    top: 0;
+    background-color: bisque;
+    transform: skew(20deg, 0deg);
+    transition: all 0.4s ease;
+}
+.btn-2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    border: 3px solid #f79b35; 
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+.btn-2:hover::after {
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(280px);
+}
+.btn-2:hover::before {
+    background-color: #900ad3;
+    border: 3px solid #f79b35;
+    transform: skew(20deg, 0deg) scale(1.1); 
+}
+/*Fin botones*/
+/*Fin footer*/

@@ -1,10 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-html, body {
-    
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+
 .wrapper {
-    background-color: #23242a;
+    background-color: #1c1c20;
     color: bisque;
     height: 100%;
     display: flex;
@@ -19,11 +20,7 @@ html, body {
     text-align: center;
 }
 .L {
-    color: #0db8de;
-    text-decoration: none;
-}
-.L:hover {
-    color: #09768fb9;
+    color: #0DB8DE;
 }
 .btn {
     padding-top: 15px;
@@ -130,9 +127,6 @@ label {
     width: 20px;
     left: 80%;
 }
-
-
-
-.text-danger {
-    color: rgb(148, 0, 0);
+.L:hover {
+    color: #09768fb9;
 }
